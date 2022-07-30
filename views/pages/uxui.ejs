@@ -46,6 +46,18 @@
 					  <div class="flip-box-inner">
 						<div class="flip-box-front">
 						  <h2>Avis des utilisateurs le uxui</h2>
+						  <div class="ui comments">
+							<h3 class="ui dividing header">commentaires</h3>
+							<% for(unity of feedback) { %>
+								<div class="commnent">
+									<div class="content">
+										<div class="test"><%= unity.first_name %> <b><%= unity.last_name %></b></div>
+										<div class="test"><%= unity.avis %></div>
+										<div class="test"><%= unity.note %></div>
+									</div>
+								</div>
+							<% } %>
+						</div>
 						</div>
 						<div class="flip-box-back">
 						  <h2>Suite</h2>

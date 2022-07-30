@@ -26,8 +26,8 @@
 			<div class = "banner" > 
 
 				<div class="app-text"> 
-						<h3> D-CLIC <br> Venez voir avec nous les supports et canaux digitaux <br>pour promouvoir des produits et services. </h3>
-						<p>Marketing digital ou marketing numérique ?  <br> C’est métier un avenir englobant la technologie <br> et le commerce.</p>
+						<h2> D-CLIC <br> Venez coder le serveur avec nous </h2>
+						<p>Devenir spécialistes du développement web côté client, <br> ici c’est votre espace </p>
 						<div class="play-btn"> 
 							<div class="play-btn-inner"> 
 								
@@ -35,9 +35,8 @@
 						</div>
 				</div>
 
-				<div class="app-picture-marketing" >
-					<img src="./image/image_marketing.jpg">
-
+				<div class="app-picture-frontend" >
+					<img src="./image/image_frontend.jpg">
 				</div>
 
 
@@ -46,7 +45,19 @@
 					<div class="flip-box">
 					  <div class="flip-box-inner">
 						<div class="flip-box-front">
-						  <h2>Avis des utilisateurs sur le Marketing</h2>
+						  <h2>Avis des utilisateurs sur le frontend</h2>
+						  <div class="ui comments">
+							<h3 class="ui dividing header">commentaires</h3>
+							<% for(unity of feedback) { %>
+								<div class="commnent">
+									<div class="content">
+										<div class="test"><%= unity.first_name %> <b><%= unity.last_name %></b></div>
+										<div class="test"><%= unity.avis %></div>
+										<div class="test"><%= unity.note %></div>
+									</div>
+								</div>
+							<% } %>
+						</div>
 						</div>
 						<div class="flip-box-back">
 						  <h2>Suite</h2>
@@ -55,6 +66,7 @@
 					</div>
 					
 					</body>
+
 
 
 

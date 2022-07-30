@@ -26,8 +26,8 @@
 			<div class = "banner" > 
 
 				<div class="app-text"> 
-						<h2> D-CLIC <br> Venez coder le serveur avec nous </h2>
-						<p>Devenir spécialistes du développement web côté client, <br> ici c’est votre espace </p>
+						<h1> D-CLIC <br> Venez coder avec nous </h1>
+						<p>Apprendre à coder : du plaisir pour tout le monde !  <br> Connaître le codage, ce n'est pas seulement <br> satisfaire notre curiosité.  <br> Il est probable que l'avenir de l'humanité en dépend.</p>
 						<div class="play-btn"> 
 							<div class="play-btn-inner"> 
 								
@@ -35,8 +35,9 @@
 						</div>
 				</div>
 
-				<div class="app-picture-frontend" >
-					<img src="./image/image_frontend.jpg">
+				<div class="app-picture-index" >
+					<img src="./image/photo.jpg">
+
 				</div>
 
 
@@ -45,7 +46,19 @@
 					<div class="flip-box">
 					  <div class="flip-box-inner">
 						<div class="flip-box-front">
-						  <h2>Avis des utilisateurs sur le frontend</h2>
+						  <h2>Les meilleures notes des formations</h2>
+						  <div class="ui comments">
+							<h3 class="ui dividing header">commentaires</h3>
+							<% for(unity of feedback) { %>
+								<div class="commnent">
+									<div class="content">
+										<div class="test"><%= unity.first_name %> <b><%= unity.last_name %></b></div>
+										<div class="test"><%= unity.avis %></div>
+										<div class="test"><%= unity.note %></div>
+									</div>
+								</div>
+							<% } %>
+						</div>
 						</div>
 						<div class="flip-box-back">
 						  <h2>Suite</h2>
@@ -53,7 +66,7 @@
 					  </div>
 					</div>
 					
-					</body>
+				</body>
 
 
 
